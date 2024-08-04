@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Great You - Gatsby-style Analyzer</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full">
+        <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">The Great <span id="username" class="text-purple-600">You</span></h1>
+        <form id="story-form" class="space-y-4">
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-700">Your Name</label>
+                <input type="text" id="username-input" name="username" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50" required>
+            </div>
+            <div>
+                <label for="story" class="block text-sm font-medium text-gray-700">Your Story</label>
+                <textarea id="story" name="story" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition duration-200">Analyze in Gatsby Style</button>
+        </form>
+        <div id="result" class="mt-6 p-4 bg-gray-100 rounded-md hidden">
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">Gatsby's Perspective:</h2>
+            <p id="gatsby-analysis" class="text-gray-700 italic"></p>
+        </div>
+    </div>
+
+    <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded-lg max-w-md">
+            <h2 class="text-xl font-bold mb-4">Analysis Complete</h2>
+            <p>Your story has been analyzed in the style of The Great Gatsby.</p>
+            <button id="close-popup" class="mt-4 bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition duration-200">Close</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

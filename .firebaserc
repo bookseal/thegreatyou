@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "thegreatyou-4f0c7",
+    "staging": "thegreatyou-4f0c7"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
